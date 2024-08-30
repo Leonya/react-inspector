@@ -5,7 +5,7 @@ const manifest = defineManifest({
   manifest_version: 3,
   name: "React Inspector",
   description:
-    "The Inspector launch with Ctrl+Shift+X (Command+Shift+X on Mac). You can detect and open the React component source code easily.",
+    "React Inspector allows you to navigate to the source code of the component easily. Launch with Ctrl+Shift+X (Command+Shift+X on Mac).",
   icons: {
     "16": "icon/icon16.png",
     "48": "icon/icon48.png",

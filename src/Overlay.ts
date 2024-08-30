@@ -116,7 +116,7 @@ function findTipPos(dims: Box, bounds: Box, tipSize: Box) {
 
   let top;
   if (dims.top + dims.height + tipHeight <= bounds.top + bounds.height) {
-    if (dims.top + dims.height < bounds.top + 0) {
+    if (dims.top + dims.height < bounds.top) {
       top = bounds.top + margin;
     } else {
       top = dims.top + dims.height + margin;

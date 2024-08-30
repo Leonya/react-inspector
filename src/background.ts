@@ -5,8 +5,8 @@ const getCurrentTab = async () => {
 };
 
 const sendInspectSignal = async (msg: string, tabId?: number) => {
-  const target = tabId || (await (await getCurrentTab()).id) || 0;
-  chrome.tabs.sendMessage(target, msg);
+  const target = tabId || (await getCurrentTab()).id || 0;
+  await chrome.tabs.sendMessage(target, msg);
 };
 
 const reactInspectorMenuItemId = "react-inspector";
